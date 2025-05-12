@@ -1,0 +1,215 @@
+// let frist = new String("deepak")
+// let second = "gupta"
+// console.log(frist);
+// let a = 'DDeepaa';
+// let b = 'Gupta';
+// let c = `${a} and ${b}`;
+
+// console.log(c);
+// console.log(a.toLowerCase());
+
+// function getvalue(first, last) {
+//     let full = first + last;
+//     return full;
+// }
+// let ans = getvalue("deepak", "gupta");
+// console.log(ans);
+
+// let obj = {
+//     names: "deepak gupta",
+//     age: 21,
+//     height: "5.6fit",
+//     // function koo obj me 
+//     fris: function() {
+//         console.log("hello");
+//     }
+
+
+// };
+// for (let key in obj) {
+//     console.log(key, obj[key])
+// }
+
+
+
+// console.log(obj);
+// obj.fris();
+// console.log(typeof(obj))
+//     // let arr = [2, 5, 4, 6, 5];
+//     // console.log(arr);
+//     // let brr = new Array("deepak", 21, 5.6);
+//     // console.log(brr);
+//     // brr.push("gupta");
+//     // brr.push("gupta");
+//     // brr.push("gupta");
+//     // console.log(brr);
+//     // // brr.pop();
+//     // console.log(brr);
+//     // brr.splice(2, 4, "gu");
+//     // console.log(brr);
+//     //let arr = [2, 4, 6, 7, 8, 9, 10];
+//     // map se pura arrray access kar sakta hu 
+//     // let arrans = arr.map((number) => { return number * number });
+//     // let arrn = arr.map((number) => { return number + 1 })
+//     // console.log(arrn)
+//     // console.log(arrans)
+//     // filter karke dega ye 
+
+// let arrans = arr.filter((number) => {
+//     return number % 2 === 0;
+// });
+// console.log(arrans);
+// let arr = [2, 3, 'deepak', 'gupta'];
+// let ans = arr.filter((value) => {
+//     // return value === 'string'
+//     if (typeof(value) === 'number')
+//     //typeof(value) === 'string')
+//     {
+//         return true;
+//     } else {
+//         return false;
+//     }
+
+// });
+// console.log(ans);
+
+
+// reduce 
+
+//accumileter 
+//current
+
+
+
+
+// let arr = [10, , 60, 20, 30, 40];
+// let ans = arr.reduce((acc, curr) => { return acc + curr }, 0);
+// console.log(ans)
+// reducee 
+// count karta hai 
+// acc=0 then 0+10=10,10+20.....=100
+// acc =0 
+// arr.sort();
+// arr.reverse();
+// console.log(arr);
+
+
+// for each
+// arr.forEach((value, index) => {
+//     console.log("number:", value, "index:", index);
+// });
+
+
+// // for 
+// for (index = 0; index < arr.length; index++) {
+//     console.log(arr[index]);
+// }
+
+//for each 
+// for in :let key in obj
+// yh obj ke lie hota hai 
+// // for of :iteration let vslue of arr
+
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+
+// function 
+
+
+// let getsum = (arr) => {
+//     let sum = 0;
+//     arr.forEach((value) => {
+//         sum = sum + value;
+
+//     })
+//     return sum;
+// }
+// let totalsum = getsum(arr);
+// console.log(totalsum);
+
+// variable hosting  
+// function hosting
+// class hosting 
+// stack:   lifo
+
+// function greetme(greet, fullname) {
+//     console.log("hii i am deepak ", fullname);
+//     greet();
+
+// }
+
+// function greet() {
+//     console.log("use java script ");
+// }
+// greetme(greet, 'gupta ');
+
+// // function ke ander function call
+// function solve() {
+//     return function(number) {
+//         return number * number;
+//     }
+// }
+// let ans = solve(5);
+// let finalans = ans(5);
+// console.log(finalans);
+
+// store in data base in array 
+let arr = [
+    function(a, b) {
+        return a + b;
+    },
+    function(a, b) {
+        return a * b;
+    },
+    function(a, b) {
+        return a / b;
+    }
+];
+
+let first = arr[2];
+let finalAns = first(5, 6);
+console.log(finalAns);
+
+
+
+// /// global
+// let age = 25;
+
+// console.log(age); {
+//     console.log(age);
+// }
+
+// function greet(age) {
+//     console.log("hii ", age)
+// }
+// greet(age);
+
+// for (let i = 0; i < 2; i++) {
+//     console.log(age);
+// }
+
+
+
+// function 
+function sheet(age) {
+    let name = 'deepak ';
+    console.log("hello ", name);
+    console.log("what is your ", age);
+}
+// function ke ander difine varible ko function me hi use kar sakte hai 
+// console.log(name);
+console.log(sheet(21));
+
+//block
+{
+    let height = 5.6;
+    console.log(height);
+}
+// height ko sirf bloack me 
+
+// console.log(height);
+
+// temporal zone
